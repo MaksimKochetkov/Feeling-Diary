@@ -10,9 +10,7 @@
     <ScrollView
         android:id="@+id/scroll"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="202dp"
-        tools:layout_editor_absoluteY="-52dp">
+        android:layout_height="match_parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/cosnt"
@@ -23,14 +21,13 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0"
-                tools:srcCompat="@drawable/backgg" />
+                android:layout_width="394dp"
+                android:layout_height="900dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/backgg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="-1dp" />
 
             <ImageView
                 android:id="@+id/imageView2"
@@ -38,11 +35,10 @@
                 android:layout_height="wrap_content"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/imageView"
-                app:layout_constraintVertical_bias="0.086"
-                tools:srcCompat="@drawable/logo" />
+                app:layout_constraintVertical_bias="0.147"
+                android:src="@drawable/logo" />
 
             <TextView
                 android:id="@+id/textView"
@@ -52,7 +48,7 @@
                 android:text="Привет"
                 android:textAllCaps="true"
                 android:textColor="@color/white"
-                android:textSize="40sp"
+                android:textSize="50sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -73,51 +69,51 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView" />
 
+
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/button"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="30dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="236dp"
                 android:layout_marginEnd="30dp"
                 android:background="@drawable/button_sign_in"
                 android:text="Войти в аккаунт"
                 android:textSize="17sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
 
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <TextView
+                android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="@+id/cosnt"
+                android:text=" Зарегистрируйтесь"
+                android:textColor="#07ffd1"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/textView3"
+                app:layout_constraintStart_toEndOf="@+id/textView3"
+                app:layout_constraintTop_toTopOf="@+id/textView3"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="52dp"
+                android:text="Еще нет аккаунта?"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintHorizontal_bias="0.249"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button" />
 
-
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=" Зарегистрируйтесь"
-                    android:textSize="15sp"
-                    android:textStyle="bold"
-                    tools:layout_editor_absoluteX="148dp"
-                    tools:layout_editor_absoluteY="-1dp" />
-
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Еще нет аккаунта?"
-                    android:textSize="15sp"
-                    android:textStyle="bold"
-                    tools:layout_editor_absoluteX="15dp"
-                    tools:layout_editor_absoluteY="-1dp" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>

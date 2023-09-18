@@ -5,15 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:srcCompat="@drawable/backgg"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-26dp" />
-
+        android:src="@drawable/backgg"
+        android:scaleType="fitXY"
+        />
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
@@ -23,6 +21,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@drawable/logo" />
+
+
+
+
 
 
 
