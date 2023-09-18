@@ -17,5 +17,6 @@
             app:srcCompat="@drawable/inyan"
             app:circularflow_radiusInDP="10dp"
             />
+        https://www.figma.com/file/o64MVTcYi1OgcG9YqwcVYS/Контрольная-1_RecyclerView?type=design&node-id=2-5&mode=design&t=l76wMyVlElmNdEq2-0
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
