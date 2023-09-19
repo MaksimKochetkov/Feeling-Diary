@@ -2,21 +2,45 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="66dp"
-        android:layout_height="68dp"
-        tools:ignore="MissingConstraints">
+        android:id="@+id/constraintLayout"
+        android:layout_width="93dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        android:background="@drawable/card">
 
         <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="66dp"
-            android:layout_height="52.55dp"
-            app:srcCompat="@drawable/inyan"
-            app:circularflow_radiusInDP="10dp"
-            />
-        https://www.figma.com/file/o64MVTcYi1OgcG9YqwcVYS/Контрольная-1_RecyclerView?type=design&node-id=2-5&mode=design&t=l76wMyVlElmNdEq2-0
+            android:id="@+id/imagefeel"
+            android:layout_width="81dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textfeel"
+            android:layout_width="94dp"
+            android:layout_height="21dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagefeel"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="HardcodedText,SmallSp" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
