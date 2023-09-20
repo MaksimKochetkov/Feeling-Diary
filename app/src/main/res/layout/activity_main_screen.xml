@@ -55,10 +55,7 @@
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
         app:spanCount="1"
-        tools:listitem="@layout/spok" /><![CDATA[
-    />
-
-    ]]>
+        tools:listitem="@layout/spok" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclenews"
