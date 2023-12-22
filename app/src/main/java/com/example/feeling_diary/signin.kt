@@ -29,6 +29,7 @@ class signin : AppCompatActivity() {
         }
         if (email.text.toString().isNotEmpty()&&pass.text.toString().isNotEmpty())
         {
+            Toast.makeText(this, "Регистеренко успешно", Toast.LENGTH_LONG).show()
             if (emailValid(email.text.toString()))
             {
                 val intent = Intent(this@signin, main_screen::class.java)
